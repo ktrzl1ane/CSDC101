@@ -28,31 +28,6 @@ using namespace std;
 
 int main() {
     
-    int lemons, cups_of_sugar;
-    
-    cout<< "Lemons: ";
-    cin>> lemons;
-    cout<< "Sugar: ";
-    cin>> cups_of_sugar;
-    
-    if(lemons > 0 && cups_of_sugar > 0){
-        cout<< "You're ready to sell lemonade!";
-    }
-    
-    else if(lemons <= 0 || cups_of_sugar <= 0){
-        cout<< "You can't make lemonade!";
-    }
-    
-    return 0;
-}
-
-//Code2:
-
-#include <iostream>
-using namespace std;
-
-int main() {
-    
     int cups_of_sugar, lemons;
     
     cout<< "Lemons: ";
@@ -66,6 +41,32 @@ int main() {
     
     else {
         cout<< "You're ready to sell lemonade!";
+    }
+    
+    return 0;
+}
+
+
+//Code2:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int lemons, cups_of_sugar;
+    
+    cout<< "Lemons: ";
+    cin>> lemons;
+    cout<< "Sugar: ";
+    cin>> cups_of_sugar;
+    
+    if(lemons > 0 && cups_of_sugar > 0){
+        cout<< "You're ready to sell lemonade!";
+    }
+    
+    else if(lemons <= 0 || cups_of_sugar <= 0){
+        cout<< "You can't make lemonade!";
     }
     
     return 0;
