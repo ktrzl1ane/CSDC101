@@ -53,7 +53,6 @@ int main()
         default:
             cout<< "Invalid input.";
         break;
-        
     }
 
     return 0;
