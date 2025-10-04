@@ -120,9 +120,7 @@ int main()
         
         default: 
             cout<< "Invalid input.";
-        break;
-
-        
+        break;   
     }
 
     return 0;
