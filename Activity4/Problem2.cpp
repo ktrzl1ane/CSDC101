@@ -38,7 +38,7 @@ int main() {
     }
     
     else {
-        cout<< "The Lemonade costs $1.00.";
+        cout<< "The lemonade costs $1.00.";
     }
     
     return 0;
