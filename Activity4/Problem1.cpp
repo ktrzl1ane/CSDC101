@@ -36,7 +36,7 @@ int main() {
         cout<< "Enjoy your lemonade!";
     }
     
-    else if (money < 1) {
+    else {
         cout<< "Sorry, you need more money.";
     }
 
