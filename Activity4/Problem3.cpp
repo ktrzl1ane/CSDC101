@@ -21,7 +21,7 @@ Sample Output:
 You can't make lemonade!
 */
 
-//Code1:
+//Code:
 
 #include <iostream>
 using namespace std;
@@ -29,12 +29,14 @@ using namespace std;
 int main() {
     
     int cups_of_sugar, lemons;
-    
+
+	//Ask for inventory
     cout<< "Lemons: ";
     cin>> lemons;
     cout<< "Sugar: ";
     cin>> cups_of_sugar;
-    
+
+	//Check if ingredients are sufficient
     if(lemons <= 0 || cups_of_sugar <= 0){
         cout<< "You can't make lemonade!";
     }
@@ -47,27 +49,3 @@ int main() {
 }
 
 
-//Code2:
-
-#include <iostream>
-using namespace std;
-
-int main() {
-    
-    int lemons, cups_of_sugar;
-    
-    cout<< "Lemons: ";
-    cin>> lemons;
-    cout<< "Sugar: ";
-    cin>> cups_of_sugar;
-    
-    if(lemons > 0 && cups_of_sugar > 0){
-        cout<< "You're ready to sell lemonade!";
-    }
-    
-    else if(lemons <= 0 || cups_of_sugar <= 0){
-        cout<< "You can't make lemonade!";
-    }
-    
-    return 0;
-}
