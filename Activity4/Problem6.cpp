@@ -16,19 +16,26 @@ using namespace std;
 
 int main()
 {
-    char choice;
+    int choice;
     float money;
     int temperature;
     int cups_of_sugar, lemons;
     float cups, original_price, discount, final_price;
     char option;
     
+    cout<< "Press 1 for Basic Pricing Decision"<< endl;
+    cout<< "Press 2 for Weather-Based Discounts"<< endl;
+    cout<< "Press 3 for Inventory Check"<< endl;
+    cout<< "Press 4 for Bulk Purchase Discount"<< endl;
+    cout<< "Press 5 for Player Movement"<< endl;
+    cout<< "----------------------------------------------"<< endl;
+    
     cout<< "What problem do you want to see? ";
     cin>> choice;
     
     switch(choice) {
         
-        case '1':
+        case 1:
             cout<< "\nEnter your money: ";
             cin>> money;
     
@@ -36,12 +43,12 @@ int main()
                 cout<< "Enjoy your lemonade!";
             }
     
-            else if (money < 1) {
+            else {
                 cout<< "Sorry, you need more money.";
             }
         break;
         
-        case '2':
+        case 2:
             cout<< "\nEnter today's temperature in Celsius: ";
             cin>> temperature;
     
@@ -54,7 +61,7 @@ int main()
             }
         break;
         
-        case '3':
+        case 3:
             cout<< "\nLemons: ";
             cin>> lemons;
             cout<< "Sugar: ";
@@ -69,7 +76,7 @@ int main()
             }
         break;
         
-        case '4':
+        case 4:
             cout<< "\nHow many cups? ";
             cin>> cups;
     
@@ -92,7 +99,7 @@ int main()
             }
         break;
         
-        case '5':
+        case 5:
             cin>> option;
     
             switch(option) {
