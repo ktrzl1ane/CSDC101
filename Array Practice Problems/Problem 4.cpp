@@ -2,8 +2,7 @@
 using namespace std;
 
 int main() {
-    
-    int n, min, max;
+    int n;
     
     cout << "Enter number of elements: ";
     cin >> n;
@@ -13,24 +12,26 @@ int main() {
     
     for(int i = 0; i < n; i++) {
         cin >> num[i];
-        
-        if (num[i] < num[0]) {
-            min = num[i];
-        }
-        
-        else if (num[i] > num[0]) {
-            max = num[i];
-        }
-        
         sum += num[i];
         
         if (num[i] % 2 == 0) {
             even_count++;
-        }
+        } 
         else {
             odd_count++;
         }
-        
+    }
+    
+    int min = num[0];
+    int max = num[0];
+
+    for(int i = 1; i < n; i++) {
+        if (num[i] < min) {
+            min = num[i];
+        }
+        else if (num[i] > max) {
+            max = num[i];
+        }
     }
     
     cout << "Minimum: " << min << endl;
